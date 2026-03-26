@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fsniff"
+version = "0.1.1"
+description = "A tool to sniff file contents, check integrity and generate reports."
+authors = [
+    {name = "Jules", email = "jules@example.com"}
+]
+dependencies = [
+    "click",
+    "rich",
+    "pyyaml",
+]
+requires-python = ">=3.9"
+
+[project.scripts]
+fsniff = "fsniff.cli:main"

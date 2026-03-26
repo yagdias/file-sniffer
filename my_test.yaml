@@ -1,0 +1,14 @@
+settings:
+  default_head: 5
+  report_name: "meu_relatorio.md"
+
+targets:
+  - pattern: "samples/*.csv"
+    head: 2
+    type: "csv"
+  - pattern: "samples/logs/*.log"
+    head: 10
+  - pattern: "samples/empty.txt"
+  - pattern: "samples/*.zip"
+    recursive_zip: true
+    include: ["*.csv", "*.log"]
